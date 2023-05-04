@@ -22,6 +22,15 @@ public class TestSglyList {
         }
         currNode.next=n1;
     }
+    public void countOfNode(){
+        int c=0;
+        Node curnode=head;
+        while(curnode!=null){
+            c++;
+            curnode=curnode.next;
+        }
+        System.out.println("no of nodeds in this linledlist is ="+c);
+    }
     public void printList(){
         if(head == null){
             System.out.println("list is empty");
@@ -43,5 +52,7 @@ public class TestSglyList {
         System.out.println("show list");
         System.out.println(" ");
         refobj.printList();
+        System.out.println(" ");
+        refobj.countOfNode();
     }
 }
