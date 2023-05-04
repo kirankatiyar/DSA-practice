@@ -54,7 +54,6 @@ public class LinearCollection {
         System.out.println("show list");
         refobj.printList();
         refobj.addLastPosition("katiyar");
-        System.out.println("show list");
         refobj.printList();
     }
 }
