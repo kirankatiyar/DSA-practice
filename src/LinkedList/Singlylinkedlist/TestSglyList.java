@@ -15,7 +15,6 @@ public class TestSglyList {
             head=newNode;
             return;
         }
-        //Node n1 = new Node(data);
         Node currNode=head;
         while(currNode.next!=null){
             currNode=currNode.next;
