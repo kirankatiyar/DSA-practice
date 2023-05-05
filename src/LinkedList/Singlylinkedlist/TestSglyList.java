@@ -15,12 +15,12 @@ public class TestSglyList {
             head=newNode;
             return;
         }
-        Node n1 = new Node(data);
+        //Node n1 = new Node(data);
         Node currNode=head;
         while(currNode.next!=null){
             currNode=currNode.next;
         }
-        currNode.next=n1;
+        currNode.next=newNode;
     }
     public void countOfNode(){
         int c=0;
