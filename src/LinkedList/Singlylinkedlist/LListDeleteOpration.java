@@ -50,6 +50,18 @@ public class LListDeleteOpration {
         head=head.next;
         size--;
     }
+    public void deleteAtLast(int pos){
+        if(head==null){
+            System.out.println("list is empty");
+        }
+        Node prev = head;
+        for(int i=1;i<=pos-1;i++){
+            prev = prev.next;
+        }
+        prev.next=prev.next.next;
+        size--;
+
+    }
 
     public static void main(String[] args) {
         LListDeleteOpration obj = new LListDeleteOpration();
@@ -65,6 +77,11 @@ public class LListDeleteOpration {
         System.out.println("show list after performing delete opration at First position");
         obj.displayList();
         System.out.println("size of list:= "+obj.getSize());
+        obj.deleteAtLast(3);
+        System.out.println("show list after performing delete opration at last position");
+        obj.displayList();
+        System.out.println("size of list:= "+obj.getSize());
+
     }
 }
 
