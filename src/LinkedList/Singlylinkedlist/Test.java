@@ -1,7 +1,10 @@
 package LinkedList.Singlylinkedlist;
 public class Test {
     Node head;
-    int size=0;
+    int size;
+    Test(){
+        this.size=0;
+    }
     //Node class
     class Node{
         String data;
@@ -37,12 +40,11 @@ public class Test {
             }
         else {
             Node temp = head;
-            Node newnode = new Node(data);
             for(int i=1;i<=pos-1;i++){
                 temp=temp.next;
             }
-            newnode.next=temp.next;
-            temp.next=newnode;
+            new_node.next=temp.next;
+            temp.next=new_node;
         }
     }
     public void displayList(){
@@ -56,6 +58,9 @@ public class Test {
         }
         System.out.println("null");
     }
+    public int getSize(){
+        return size;
+    }
 
     public static void main(String[] args) {
         Test obj = new Test();
@@ -65,8 +70,10 @@ public class Test {
         obj.insertNode("node_n4");
         System.out.println("show original list");
         obj.displayList();
+        System.out.println("size of list:= "+obj.getSize());
         obj.insertAtPosition(3,"node_p");
         System.out.println("show list after insertion at given position");
         obj.displayList();
+        System.out.println("size of list:= "+obj.getSize());
     }
 }
