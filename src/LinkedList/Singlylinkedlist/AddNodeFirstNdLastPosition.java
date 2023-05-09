@@ -1,5 +1,5 @@
 package LinkedList.Singlylinkedlist;
-public class LinearCollection {
+public class AddNodeFirstNdLastPosition {
     Node head;
     class Node{
         String data;
@@ -43,7 +43,7 @@ public class LinearCollection {
         System.out.println("null");
     }
     public static void main(String[] args) {
-        LinearCollection refobj = new LinearCollection();
+        AddNodeFirstNdLastPosition refobj = new AddNodeFirstNdLastPosition();
         System.out.println("show first Node");
         refobj.add("kiran");
         refobj.printList();
