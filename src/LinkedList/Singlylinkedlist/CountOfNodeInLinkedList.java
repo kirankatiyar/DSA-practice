@@ -1,5 +1,5 @@
 package LinkedList.Singlylinkedlist;
-public class TestSglyList {
+public class CountOfNodeInLinkedList {
     Node head;
     class Node{
         int data;
@@ -28,7 +28,7 @@ public class TestSglyList {
             c++;
             curnode=curnode.next;
         }
-        System.out.println("no of nodeds in this linledlist is ="+c);
+        System.out.println("No of Nodes in this Linked_List is ="+c);
     }
     public void printList(){
         if(head == null){
@@ -42,7 +42,7 @@ public class TestSglyList {
         System.out.print("null");
     }
     public static void main(String[] args) {
-        TestSglyList refobj = new TestSglyList();
+        CountOfNodeInLinkedList refobj = new CountOfNodeInLinkedList();
         refobj.add(101);
         refobj.add(102);
         refobj.add(104);
