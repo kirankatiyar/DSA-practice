@@ -1,8 +1,8 @@
 package LinkedList.Singlylinkedlist;
-public class LListDeleteOpration {
+public class DeleteNodeFirstNdLastPosition {
     Node head;
     int size;
-    LListDeleteOpration(){
+    DeleteNodeFirstNdLastPosition(){
         this.size=0;
     }
     //Node class
@@ -43,6 +43,7 @@ public class LListDeleteOpration {
     public int getSize(){
         return size;
     }
+    //At First Position
     public void deleteAtFirst(){
         if(head==null){
             System.out.println("list is empty");
@@ -50,6 +51,7 @@ public class LListDeleteOpration {
         head=head.next;
         size--;
     }
+    //At Last Position
     public void deleteAtLast(int pos){
         if(head==null){
             System.out.println("list is empty");
@@ -63,7 +65,7 @@ public class LListDeleteOpration {
     }
 
     public static void main(String[] args) {
-        LListDeleteOpration obj = new LListDeleteOpration();
+        DeleteNodeFirstNdLastPosition obj = new DeleteNodeFirstNdLastPosition();
         obj.insertNode("Mathematics");
         obj.insertNode("Physics");
         obj.insertNode("Chemistry");
