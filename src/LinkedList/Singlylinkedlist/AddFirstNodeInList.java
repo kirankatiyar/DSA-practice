@@ -1,6 +1,6 @@
 //Add First Node...
 package LinkedList.Singlylinkedlist;
-public class DemoSlyLinkedList {
+public class AddFirstNodeInList {
     Node head;
     class Node{
         int data;
@@ -10,6 +10,7 @@ public class DemoSlyLinkedList {
             this.next=null;
         }
     }
+    //Add newNode When Head is null
     public void add(int data){
         Node newNode= new Node(data);
         if(head==null){
@@ -23,13 +24,13 @@ public class DemoSlyLinkedList {
         Node t;
         t=head;
         while(t!=null){
-            System.out.print(t.data+"-");
+            System.out.print(t.data+" ");
             t=t.next;
         }
         System.out.print("null");
     }
     public static void main(String[] args) {
-        DemoSlyLinkedList obj = new DemoSlyLinkedList();
+        AddFirstNodeInList obj = new AddFirstNodeInList();
         obj.add(100);
         obj.viewList();
     }
