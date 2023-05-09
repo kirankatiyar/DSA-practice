@@ -60,7 +60,6 @@ public class LListDeleteOpration {
         }
         prev.next=prev.next.next;
         size--;
-
     }
 
     public static void main(String[] args) {
