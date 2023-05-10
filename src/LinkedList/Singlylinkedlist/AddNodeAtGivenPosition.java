@@ -1,8 +1,9 @@
 package LinkedList.Singlylinkedlist;
-public class Test {
+
+public class AddNodeAtGivenPosition {
     Node head;
     int size;
-    Test(){
+    AddNodeAtGivenPosition(){
         this.size=0;
     }
     //Node class
@@ -35,10 +36,10 @@ public class Test {
             System.out.println("invalid position , insertion not possible at this position");
         }
 
-            else if(pos==1){
-                new_node.next=head;
-                head=new_node;
-            }
+        else if(pos==1){
+            new_node.next=head;
+            head=new_node;
+        }
         else {
             Node temp = head;
             for(int i=1;i<=pos-1;i++){
@@ -64,7 +65,7 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        Test obj = new Test();
+        AddNodeAtGivenPosition obj = new AddNodeAtGivenPosition();
         obj.insertNode("node_n1");
         obj.insertNode("node_n2");
         obj.insertNode("node_n3");
@@ -78,3 +79,7 @@ public class Test {
         System.out.println("size of list:= "+obj.getSize());
     }
 }
+
+
+
+
