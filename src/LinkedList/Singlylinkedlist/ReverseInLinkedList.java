@@ -16,7 +16,7 @@ public class ReverseInLinkedList {
         }
     }
     public void insertion(int data){
-        Node new_node = new Node();
+        Node new_node = new Node(data);
         if(head==null){
         head=new_node;
         return;
@@ -33,22 +33,22 @@ public class ReverseInLinkedList {
         }
         Node curr = head;
         while(curr!=null){
-            System.out.println(curr.data+" ");
+            System.out.print(curr.data+" ");
             curr = curr.next;
         }
         System.out.println("null");
     }
     public void reverseList(){
-        Node curr = head;
-        Node prvs;
-        Node temp ;
-        while(curr!=null){
-            temp = curr.next;
-            curr.next = prvs;
-            prvs = curr;
-            curr = temp;
-            curr=curr.next;
+        Node current = head;
+        Node prvs=null;
+        Node backup ;
+        while(current!=null){
+            backup = current.next;
+            current.next = prvs;
+            prvs = current;
+            current = backup;
         }
+        head=prvs;
     }
     public static void main(String[] args) {
         ReverseInLinkedList refobj = new ReverseInLinkedList();
@@ -60,7 +60,7 @@ public class ReverseInLinkedList {
         System.out.println(" show list");
         refobj.displayList();
         refobj.reverseList();
-        System.out.println("show list");
+        System.out.println("show reverse list");
         refobj.displayList();
 
     }
