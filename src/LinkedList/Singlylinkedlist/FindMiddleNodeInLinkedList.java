@@ -8,7 +8,7 @@ public class FindMiddleNodeInLinkedList {
     }
     //Node Class
     class Node{
-        int data;
+        int data ;
         Node next;
         //Parameterize Constructor of Node Class
         Node(int data){
