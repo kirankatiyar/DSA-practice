@@ -1,5 +1,5 @@
 package LinkedList.Doublylinkedlist;
-public class DoublyLinkedListAddNodeInBeginning {
+public class InsertNodeAtTheBeginning {
     Node head;
     class Node{
         int data;
@@ -12,15 +12,15 @@ public class DoublyLinkedListAddNodeInBeginning {
             this.prev=null;
         }
     }
-    //add Node in Beginning
-    public void addNodeAtFirst(int data){
+    // insert newnode at Beginning
+    public void insertNodeAtFirst(int data){
         Node new_node = new Node(data);
-        //add new node
+        // insertn new node
         if(head==null){
             head = new_node;
             return;
         }
-        //add First Node  in Beginning
+        //insert Node at  Beginning
         else {
             new_node.next = head;
             head.prev = new_node;
@@ -39,12 +39,12 @@ public class DoublyLinkedListAddNodeInBeginning {
         System.out.println("-->null");
     }
     public static void main(String[] args) {
-        DoublyLinkedListAddNodeInBeginning refobj = new DoublyLinkedListAddNodeInBeginning();
+        InsertNodeAtTheBeginning refobj = new InsertNodeAtTheBeginning();
         System.out.println("Add new node ...nd show Doubly linked list");
-        refobj.addNodeAtFirst(300);
+        refobj.insertNodeAtFirst(300);
         refobj.displayList();
-        System.out.println("add first Node in Beginning...And show Doubly linked list");
-        refobj.addNodeAtFirst(200);
+        System.out.println("add first Node at Beginning...And show Doubly linked list");
+        refobj.insertNodeAtFirst(200);
         refobj.displayList();
 
     }
