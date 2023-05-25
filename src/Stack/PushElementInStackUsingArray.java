@@ -6,7 +6,7 @@ public class PushElementInStackUsingArray {
     PushElementInStackUsingArray(){
         this.top=-1;
         this.size=3;
-        arr  = new int[size];
+        arr = new int[size];
     }
     public void pushElement(int data){
         if(top==size-1){
