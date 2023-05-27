@@ -16,7 +16,7 @@ public class PushElementInStackUsingLinkedList {
         }
         else{
             new_node.next=head;
-            head=new_node;
+            head=new_node ;
         }
     }
     public void display(){
