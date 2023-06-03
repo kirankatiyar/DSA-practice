@@ -1,7 +1,12 @@
 package Queue;
 public class EnqueueElementInQueueUsingLinkedList {
-    Node front = null;
-    Node rear = null;
+    Node front;
+    Node rear;
+    EnqueueElementInQueueUsingLinkedList(){
+        this.front=null;
+        this.rear=null;
+    }
+
     class Node{
         int data;
         Node next;
