@@ -1,7 +1,7 @@
 package Stack;
 import java.util.*;
 public class ReverseAStringUsingStack {
-    public static String reverse(String str) {
+    public static String reverse_String(String str) {
         // create an empty stack of characters
         Stack<Character> stack = new Stack<Character>();
         //convert String into character array
@@ -14,19 +14,20 @@ public class ReverseAStringUsingStack {
         for(int i=0;i<chrr.length;i++){
             chrr[i]=stack.pop();
         }
-        //convert CharArray into String by using valoOf() method
+       //convert CharArray into String by using valoOf() method
         //create an object of String class
         String strr = new String();
         String newstr = strr.valueOf(chrr);
-        System.out.println("reverse String");
-        System.out.println(newstr);
-        return newstr;
+        return (newstr);
     }
     public static void main(String[] args) {
+        String newstrr;
         Scanner s = new Scanner(System.in);
         ReverseAStringUsingStack refobj = new ReverseAStringUsingStack();
         System.out.println("enter your String");
         String str=s.next();
-        refobj.reverse(str);
+        newstrr=refobj.reverse_String(str);
+        System.out.println("reverse String");
+        System.out.println(newstrr);
     }
 }
