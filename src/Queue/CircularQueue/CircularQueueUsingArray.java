@@ -48,7 +48,6 @@ public class CircularQueueUsingArray {
         System.out.print(arryy[i]+" ");
     }
     public static void main(String[] args) {
-        int tem;
         CircularQueueUsingArray refobj = new CircularQueueUsingArray(5);
         System.out.println("insert element in queue and show queue");
         refobj.enqueue(10);
@@ -58,8 +57,8 @@ public class CircularQueueUsingArray {
         refobj.enqueue(30);
         refobj.displayQueue();
         System.out.println("\n"+"dequeue element and show queue");
-        tem=refobj.dequeue();
-        tem=refobj.dequeue();
+        refobj.dequeue();
+        refobj.dequeue();
         refobj.displayQueue();
         System.out.println("\n"+"enqueue element and show queue");
         refobj.enqueue(14);
